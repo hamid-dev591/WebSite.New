@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FPS Inspector — Analyzer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="index2.html" class="active">Analyzer</a>
+    <a href="index3.html">AI Chat</a>
+    <a href="index4.html">Share</a>
+    <a href="index5.html">Settings</a>
+  </nav>
+
+  <main class="content">
+    <h2>FPS Live Test</h2>
+    <canvas id="fpsCanvas" width="400" height="120"></canvas>
+    <div class="fps-info">
+      <div>FPS Now: <span id="fpsNow">--</span></div>
+      <div>FPS Avg: <span id="fpsAvg">--</span></div>
+      <div>FPS Min: <span id="fpsMin">--</span></div>
+    </div>
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn" disabled>Stop</button>
+    </div>
+
+    <h2>Device Info</h2>
+    <ul class="nice-list">
+      <li>CPU Cores: <strong id="cpuCores">--</strong></li>
+      <li>Memory: <strong id="deviceMem">--</strong></li>
+      <li>GPU: <strong id="gpuInfo">--</strong></li>
+      <li>Browser: <strong id="ua">--</strong></li>
+      <li>Screen: <strong id="screenRes">--</strong></li>
+    </ul>
+<ul class="nice-list">
+  <li>CPU Usage: <strong id="cpuUsage">--%</strong></li>
+  <li>RAM Usage: <strong id="ramUsage">--%</strong></li>
+  <li>CPU Temp: <strong id="cpuTemp">-- °C</strong></li>
+</ul>
+
+    <h2>AI Assessment</h2>
+    <div id="assessment"><p>Loading...</p></div>
+  </main>
+
+
+
+
+
+
+  <footer class="footer">
+    <small>Built by HamidDev</small>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

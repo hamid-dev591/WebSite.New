@@ -1,0 +1,168 @@
+:root {
+  --red: #e53935;
+  --dark: #0f0f10;
+  --muted: #222;
+  --glass: rgba(255, 255, 255, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Arial;
+  background: linear-gradient(180deg, #0b0b0b 0%, #121212 60%);
+  color: #eee;
+}
+
+/* 🔹 Navbar */
+.navbar {
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, var(--red), #c62828);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid #fff;
+}
+
+/* 🔹 Content */
+.content {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+button {
+  background: var(--red);
+  border: none;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 6px 18px rgba(229, 57, 53, 0.25);
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* 🔹 FPS graph */
+#fpsCanvas {
+  background: #0b0b0b;
+  border-radius: 8px;
+  margin: 12px auto;
+  display: block;
+  max-width: 100%;
+}
+
+/* 🔹 Info list */
+.nice-list {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.nice-list li {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* 🔹 Footer */
+.footer {
+  text-align: center;
+  padding: 14px;
+  color: #bbb;
+  background: #0f0f10;
+  margin-top: 40px;
+}
+
+
+
+
+.nice-list strong {
+  color: #ff6f61;
+}
+
+
+
+
+
+
+/* Chat Box */
+.chat-box {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 25px;
+  padding: 10px;
+  height: 250px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-size: 14px; /* خط أصغر */
+}
+
+/* Chat bubbles */
+.chat-msg {
+  padding: 6px 10px;   /* أصغر */
+  border-radius: 10px;
+  max-width: 50%;      /* أضيق */
+  word-wrap: break-word;
+  font-size: 16px;     /* نص أصغر */
+}
+
+.chat-user {
+  align-self: flex-end;
+  background: var(--red);
+  color: white;
+  border-bottom-right-radius: 0;
+}
+
+.chat-ai {
+  align-self: flex-start;
+  background: #222;
+  color: #eee;
+  border-bottom-left-radius: 0;
+}
+
+/* Input area */
+.chat-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-controls input {
+  flex: 1;
+  padding: 2px;
+  border-radius: 50px;
+  border: 1px solid #444;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 14px;
+}
+
+.chat-controls button {
+  padding: 8px 8px;
+  font-size: 14px;
+}
